@@ -12,12 +12,21 @@ time.sleep(5)
 # CASE 1 =============================================================================================
 # driver.find_element_by_id("alertButton").click()
 # time.sleep(5)
-# handle alert with accept
+# # handle alert with accept
 # driver.switch_to.alert.accept()
 
 #  ===================================================================================================
 # CASE 2 =============================================================================================
-driver.find_element_by_id("confirmButton").click()
-time.sleep(5)
-# handle alert with cancel
-driver.switch_to.alert.dismiss()
+# driver.find_element_by_id("confirmButton").click()
+# time.sleep(5)
+# # handle alert with cancel
+# driver.switch_to.alert.dismiss()
+
+#  ===================================================================================================
+# CASE 3 =============================================================================================
+# driver.find_element_by_id("promtButton").click()
+driver.find_element_by_css_selector("#promtButton").click()
+# time.sleep(5)
+
+driver.switch_to.alert.send_keys("saya sedang test")
+driver.switch_to.alert.accept()

@@ -11,7 +11,7 @@ driver = webdriver.Chrome()
 # CASE 1 =============================================================================================
 
 # membuka alamat web untuk kita automasi
-# driver.get("https://the-internet.herokuapp.com/login")
+driver.get("https://the-internet.herokuapp.com/login")
 
 # single method == find_element
 # plural method == find_elements
@@ -19,7 +19,7 @@ driver = webdriver.Chrome()
 # driver.find_element_by_id("username").send_keys("uno")
 
 # 2 -- by name
-# driver.find_element_by_name("username").send_keys("ikhsan")
+driver.find_element_by_name("username").send_keys("ikhsan")
 
 # 3 -- by link text
 # driver.find_element_by_link_text("Elemental Selenium").click()
@@ -51,13 +51,13 @@ driver = webdriver.Chrome()
 # CASE 2 =============================================================================================
 
 # membuka alamat web untuk kita automasi
-driver.get("https://the-internet.herokuapp.com/add_remove_elements/")
+# driver.get("https://the-internet.herokuapp.com/add_remove_elements/")
 
-time.sleep(15)
+# time.sleep(15)
 # driver.find_element_by_css_selector("#content > div > button").click()
 
 # 7 -- by xpath
 # driver.find_element_by_xpath('//*[@id="content"]/div/button').click()
 
 # cara lain #1
-driver.find_element(By.XPATH, '//*[@id="content"]/div/button').click()
+# driver.find_element(By.XPATH, '//*[@id="content"]/div/button').click()
