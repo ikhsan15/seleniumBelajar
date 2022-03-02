@@ -6,7 +6,7 @@ import time
 driver = webdriver.Chrome()
 
 driver.get("https://demoqa.com/alerts")
-time.sleep(5)
+time.sleep(2)
 
 #  ===================================================================================================
 # CASE 1 =============================================================================================
@@ -24,9 +24,9 @@ time.sleep(5)
 
 #  ===================================================================================================
 # CASE 3 =============================================================================================
-# driver.find_element_by_id("promtButton").click()
-driver.find_element_by_css_selector("#promtButton").click()
-# time.sleep(5)
-
+driver.find_element_by_id("promtButton").click()
+# driver.find_element_by_css_selector("#promtButton").click()
+time.sleep(2)
 driver.switch_to.alert.send_keys("saya sedang test")
+time.sleep(2)
 driver.switch_to.alert.accept()
