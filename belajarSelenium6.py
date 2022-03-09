@@ -19,10 +19,11 @@ driver.get("https://demoqa.com/alerts")
 driver.find_element_by_id("timerAlertButton").click()
 
 try:
+    # WebDriverWait(driver, max_time_to_wait).until(EC.Expected_Condition())
     WebDriverWait(driver, 10).until(EC.alert_is_present())
     driver.switch_to.alert.accept()
     print("alert di klick")
 
 except TimeoutException:
-    print("alert tidak muncuk")
+    print("alert tidak muncul")
     pass
